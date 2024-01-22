@@ -28,6 +28,7 @@ header {
   background-size: cover;
   background-position: center;
 }
+
 .head {
   text-align: center;
   padding: 0;
@@ -76,10 +77,6 @@ header {
 .spread {
   transform: translate(0);
 }
-.Menu-navegacion a {
-  color: black;
-  text-decoration: none;
-}
 
 .titulo {
   font-size: 50px;
@@ -104,16 +101,11 @@ footer {
   margin: 20px;
 }
 
-.gal {
-  text-align: center;
-}
-
-.ser {
-  text-align: center;
-}
-
+.gal,
+.ser,
 .acerca {
   text-align: center;
+  margin: 20px;
 }
 
 section {
@@ -145,7 +137,6 @@ footer {
   display: none;
   margin: 0 auto;
   border-radius: 5px;
-  background: black;
   box-shadow: 0 0 30px rgb(0, 0, 0);
 }
 
@@ -174,9 +165,8 @@ footer {
 
 .social-media-container {
   display: flex;
-
   margin-top: 20px;
-  flex-direction: row; /* Establecer la dirección a "row" alinea los iconos horizontalmente */
+  flex-direction: row;
 }
 
 .social-media-icon {
@@ -187,13 +177,158 @@ footer {
 }
 
 .social-media-icon:hover {
-  color: #2f00ff; /* Cambia al color deseado al pasar el ratón sobre el icono */
+  color: #2f00ff;
+}
+
+.ub {
+  margin: 10px;
 }
 
 .ubicacion-map {
+  margin: 20px;
   max-width: 100%;
   height: 200px;
   border-radius: 10px;
   background: black;
   box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+/* Tamaño de pantalla hasta 1200px */
+@media screen and (max-width: 1200px) {
+  .slider-img {
+    width: 100%;
+    max-height: 200px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .footer-content {
+    padding: 0 20px;
+  }
+}
+
+/* Tamaño de pantalla hasta 1000px */
+@media screen and (max-width: 1000px) {
+  .slider-img {
+    width: 90%;
+    max-height: 180px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* Agrega estilos adicionales para pantallas hasta 1000px si es necesario */
+}
+
+/* Tamaño de pantalla hasta 900px */
+@media screen and (max-width: 900px) {
+  .slider-img {
+    width: 90%;
+    max-height: 180px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* Agrega estilos adicionales para pantallas hasta 900px si es necesario */
+}
+
+/* Tamaño de pantalla hasta 800px */
+@media screen and (max-width: 800px) {
+  .slider-img {
+    width: 80%;
+    max-height: 150px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .Menu-navegacion {
+    width: 50vw;
+  }
+
+  .titulo {
+    font-size: 40px;
+  }
+
+  .footer-content {
+    justify-content: center;
+  }
+
+  .social-media {
+    width: 80%;
+    justify-content: space-evenly;
+  }
+
+  .social-media-icon {
+    margin-left: 0;
+  }
+
+  .social-media i {
+    margin-left: 0;
+  }
+}
+
+/* Tamaño de pantalla hasta 700px */
+@media screen and (max-width: 700px) {
+  .slider-img {
+    width: 75%;
+    max-height: 120px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* Agrega estilos adicionales para pantallas hasta 700px si es necesario */
+}
+
+/* Tamaño de pantalla hasta 500px */
+@media screen and (max-width: 500px) {
+  .slider-img {
+    width: 95%;
+    max-height: 100px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .Menu-navegacion {
+    width: 65vw;
+  }
+
+  .menu {
+    top: 20px;
+    right: 20px;
+  }
+
+  .titulo {
+    font-size: 30px;
+  }
+
+  .subtitulo {
+    font-size: 30px;
+  }
+
+  .social-media {
+    width: 100%;
+  }
+}
+
+/* Tamaño de pantalla hasta 400px */
+@media screen and (max-width: 400px) {
+  .slider-img {
+    width: 90%;
+    max-height: 80px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* Agrega estilos adicionales para pantallas hasta 400px si es necesario */
+}
+
+/* Tamaño de pantalla hasta 300px */
+@media screen and (max-width: 300px) {
+  .slider-img {
+    width: 100%;
+    max-height: 80px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* Agrega estilos adicionales para pantallas hasta 300px si es necesario */
 }
