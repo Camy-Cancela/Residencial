@@ -12,6 +12,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Contenedor General */
 .contenedor {
   width: 90%;
   max-width: 1200px;
@@ -20,6 +21,7 @@ body {
   padding: 60px 0;
 }
 
+/* Header */
 header {
   height: 100vh;
   background-image: linear-gradient(
@@ -30,10 +32,11 @@ header {
     url(../Fotos/11.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover; /* Añade esta línea */
   background-position: center;
 }
 
+/* Head */
 .head {
   text-align: center;
   padding: 0;
@@ -45,6 +48,7 @@ header {
   color: black;
 }
 
+/* Menú */
 .menu {
   position: fixed;
   top: 30px;
@@ -57,6 +61,7 @@ header {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
+/* Menú de Navegación */
 .Menu-navegacion {
   position: fixed;
   z-index: 10;
@@ -64,7 +69,7 @@ header {
   right: 0;
   width: 30vw;
   height: 100%;
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-image: linear-gradient(120deg, #808181 0%, #a8a8a8 100%);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -74,33 +79,32 @@ header {
   transform: translate(110%);
 }
 
+/* Spread */
 .spread {
   transform: translate(0);
 }
 
+/* Enlaces del Menú de Navegación */
 .Menu-navegacion a {
   color: black;
   text-decoration: none;
 }
 
+/* Títulos y Subtítulos */
 .titulo {
   font-size: 50px;
   margin-bottom: 15px;
 }
 
-.copy {
+.copy,
+.subtitulo {
+  margin: 10px;
   font-weight: 300;
   font-size: 25px;
-}
-
-.subtitulo {
   text-align: center;
-  font-weight: 300;
-  color: #00aaff;
-  margin-bottom: 40px;
-  font-size: 30px;
 }
 
+/* Servicios */
 .contenedor-servicio {
   display: flex;
   justify-content: space-evenly;
@@ -119,9 +123,11 @@ header {
 .service {
   margin-bottom: 20px;
 }
+
 .service ul {
-  margin-left: 40px; /* Puedes ajustar este valor según tu preferencia */
+  margin-left: 40px;
 }
+
 .n-service {
   margin-bottom: 7px;
   color: #00aaff;
@@ -140,9 +146,11 @@ header {
   margin-right: 5px;
 }
 
+/* Galería */
 .gallery {
   background: #f2f2f2;
 }
+
 .contenedor-galeria {
   display: flex;
   justify-content: space-evenly;
@@ -155,37 +163,39 @@ header {
   margin-bottom: 20px;
 }
 
+/* Información Residencial */
 .residencial-info {
-  padding: 20px; /* Ajusta el espaciado interno según tu preferencia */
+  padding: 20px;
   text-align: center;
 }
 
 .residencial-info img {
-  width: 300px; /* Ancho fijo en píxeles, ajusta según tu preferencia */
-  height: auto; /* Mantiene la proporción original de la imagen */
-  border-radius: 10px; /* Ajusta el radio de borde según tu preferencia */
-  margin-right: 10px; /* Espacio entre las imágenes */
-  background: #000;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 30px black;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 10px;
 }
 
 .residencial-info p {
   font-size: 18px;
-  color: black; /* Ajusta el color del texto según tu preferencia */
-  margin-top: 10px; /* Ajusta el margen superior según tu preferencia */
+  color: black;
+  margin-top: 10px;
 }
 
 .Fotos-galeria {
-  max-width: 100%; /* Ajusta el ancho máximo de la imagen según tu preferencia */
+  max-width: 100%;
 }
 
+/* Imagen y Texto */
 .imagen-texto {
   flex: 1;
   font-size: 18px;
-  color: white; /* Ajusta el color del texto según tu preferencia */
-  margin-left: 10px; /* Espacio entre la imagen y el texto */
+  color: white;
+  margin-left: 10px;
 }
 
+/* Lightbox de Imágenes */
 .imagen-ligth {
   position: fixed;
   background: rgba(0, 0, 0.6);
@@ -204,14 +214,6 @@ header {
   transform: translate(0);
 }
 
-.agregar-imagen {
-  object-fit: cover;
-  width: 60%;
-  border-radius: 10px;
-  transform: scale(1);
-  transition: transform 0.3s 0.2s;
-}
-
 .showImage {
   transform: scale(1);
 }
@@ -224,6 +226,7 @@ header {
   cursor: pointer;
 }
 
+/* Expertos */
 .experts {
   display: flex;
   justify-content: space-evenly;
@@ -250,15 +253,16 @@ header {
   font-weight: 400px;
 }
 
+/* Footer */
 footer {
   background: #a6c0ee;
   padding-bottom: 0.1px;
 }
 
 .footer-content {
-  width: 100%; /* Hace que el contenido del pie de página ocupe el ancho total */
-  max-width: 1200px; /* Limita el ancho máximo del contenido a 1200px */
-  margin: 0 auto; /* Centra el contenido en la página */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -267,11 +271,13 @@ footer {
   padding-bottom: 40px;
 }
 
+/* Contacto */
 .contact-us {
   width: 40%;
   color: black;
 }
 
+/* Marca y Redes Sociales */
 .brand {
   font-weight: 500;
   font-size: 40px;
@@ -290,7 +296,7 @@ footer {
 
 .social-media-icon {
   display: inline-block;
-  margin-left: 20px; /* Ajusta el margen izquierdo según tu preferencia */
+  margin-left: 20px;
   width: 60px;
   height: 60px;
   border: 1px solid black;
@@ -309,6 +315,7 @@ footer {
   line-height: 60px;
 }
 
+/* Línea Separadora */
 .line {
   width: 100%;
   max-width: 1200px;
@@ -318,9 +325,10 @@ footer {
   margin-bottom: 60px;
 }
 
+/* Media Queries */
 @media screen and (max-width: 1200px) {
   .footer-content {
-    padding: 0 20px; /* Agrega un relleno a los lados para dispositivos más pequeños */
+    padding: 0 20px;
   }
 }
 
@@ -341,12 +349,9 @@ footer {
   .checklist-servicio {
     width: 80%;
   }
+
   .service {
     margin-bottom: 30px;
-  }
-
-  .agregar-imagen {
-    width: 80%;
   }
 
   .Fotos-galeria {
@@ -382,6 +387,14 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+  .titulo {
+    font-size: 30px; /* Ajusta el tamaño del título para pantallas más pequeñas */
+  }
+
+  .copy,
+  .subtitulo {
+    font-size: 16px; /* Ajusta el tamaño del subtítulo para pantallas más pequeñas */
+  }
   .Menu-navegacion {
     width: 65vw;
   }
@@ -389,18 +402,6 @@ footer {
   .menu {
     top: 20px;
     right: 20px;
-  }
-
-  .titulo {
-    font-size: 30px;
-  }
-
-  .subtitulo {
-    font-size: 30px;
-  }
-
-  .agregar-imagen {
-    width: 95%;
   }
 
   .Fotos-galeria {
@@ -413,5 +414,21 @@ footer {
 
   .contact-us {
     width: 90%;
+  }
+}
+
+/* Media Queries específica para dimensiones 280 x 653 */
+@media screen and (max-width: 280px) {
+  header {
+    background-size: auto; /* Evita que la imagen del header se desborde en pantallas más pequeñas */
+  }
+
+  .titulo {
+    font-size: 24px; /* Ajusta el tamaño del título para pantallas más pequeñas */
+  }
+
+  .copy,
+  .subtitulo {
+    font-size: 14px; /* Ajusta el tamaño del subtítulo para pantallas más pequeñas */
   }
 }
