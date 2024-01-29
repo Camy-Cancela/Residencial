@@ -113,7 +113,7 @@ footer {
 .gal,
 .ser,
 .acerca {
-  text-align: center;
+  text-align: center; /* Agrega esta línea para centrar el contenido */
   margin-top: 40px;
   margin: 10px;
 }
@@ -130,13 +130,6 @@ footer {
   text-align: center;
 }
 
-/* Mapa */
-#map {
-  height: 400px;
-  width: 100%;
-  margin-top: 20px;
-}
-
 /* Contenedor del Slider */
 #slider-container {
   overflow: hidden;
@@ -148,7 +141,7 @@ footer {
 .slider-img {
   max-width: 50%;
   height: auto;
-  width: 30%; /* Ajusta el porcentaje según lo pequeñas que desees las imágenes */
+  width: auto; /* Ajusta el porcentaje según lo pequeñas que desees las imágenes */
   display: none;
   margin: 0 auto;
   border-radius: 25px;
@@ -211,22 +204,64 @@ footer {
 
 .texto_ser {
   margin: 20px;
+  text-align: left; /* Ajusta según sea necesario, puede ser left, center, o right */
 }
 
-@media screen and (min-width: 768px) {
-  .slider-img {
-    width: 70%; /* Tamaño mediano en pantallas más grandes */
+@media screen and (max-width: 1200px) {
+  .acerca {
+    text-align: center; /* Ajusta el centrado para pantallas más pequeñas */
+  }
+
+  .texto_ser {
+    text-align: center; /* Ajusta el centrado para pantallas más pequeñas */
   }
 }
 
-/* Consulta de medios para pantallas más pequeñas */
-@media screen and (max-width: 767px) {
+@media (max-width: 900px) {
   .slider-img {
-    width: 90%; /* Tamaño adaptado al tamaño de la pantalla en pantallas más pequeñas */
+    max-width: 90%;
+  }
+  .Menu-navegacion {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .acerca {
+    text-align: center; /* Ajusta el centrado para pantallas más pequeñas */
   }
 
-  #prevBtn,
-  #nextBtn {
-    font-size: 1.5em; /* Reducir el tamaño de los botones en pantallas más pequeñas */
+  .texto_ser {
+    text-align: center; /* Ajusta el centrado para pantallas más pequeñas */
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .acerca {
+    text-align: center; /* Ajusta el centrado para pantallas más pequeñas */
+  }
+
+  .texto_ser {
+    text-align: center; /* Ajusta el centrado para pantallas más pequeñas */
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .acerca {
+    text-align: center; /* Ajusta el centrado para pantallas más pequeñas */
+  }
+
+  .texto_ser {
+    text-align: center; /* Ajusta el centrado para pantallas más pequeñas */
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .acerca {
+    text-align: center; /* Ajusta el centrado para pantallas más pequeñas */
+  }
+
+  .texto_ser {
+    text-align: center; /* Ajusta el centrado para pantallas más pequeñas */
   }
 }

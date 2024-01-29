@@ -22,18 +22,20 @@ body {
 }
 
 /* Header */
-header {
+.header {
+  position: relative;
   height: 100vh;
-  background-image: linear-gradient(
-      to top,
-      rgba(251, 194, 235, 0.39) 0%,
-      rgba(166, 192, 238, 0.4) 100%
-    ),
-    url(../Fotos/11.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; /* Añade esta línea */
-  background-position: center;
+}
+
+.background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5; /* Puedes ajustar la opacidad según sea necesario */
+  z-index: -1;
 }
 
 /* Head */
@@ -69,7 +71,7 @@ header {
   right: 0;
   width: 30vw;
   height: 100%;
-  background-image: linear-gradient(120deg, #808181 0%, #a8a8a8 100%);
+  background-image: linear-gradient(120deg, #b4b6b6 0%, #fdfcfc 100%);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -288,10 +290,7 @@ footer {
 }
 
 .social-media {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  padding: 20px;
 }
 
 .social-media-icon {
@@ -325,18 +324,23 @@ footer {
   margin-bottom: 60px;
 }
 
+.social-icons {
+  display: flex;
+}
+
 /* Media Queries */
 @media screen and (max-width: 1200px) {
   .footer-content {
     padding: 0 20px;
   }
 }
+@media screen and (max-width: 900px) {
+  .Menu-navegacion {
+    width: 100vw;
+  }
+}
 
 @media screen and (max-width: 800px) {
-  .Menu-navegacion {
-    width: 50vw;
-  }
-
   .titulo {
     font-size: 40px;
   }
@@ -368,7 +372,6 @@ footer {
 
   .social-media {
     width: 80%;
-    justify-content: space-evenly;
   }
 
   .social-media-icon {
@@ -394,9 +397,6 @@ footer {
   .copy,
   .subtitulo {
     font-size: 16px; /* Ajusta el tamaño del subtítulo para pantallas más pequeñas */
-  }
-  .Menu-navegacion {
-    width: 65vw;
   }
 
   .menu {

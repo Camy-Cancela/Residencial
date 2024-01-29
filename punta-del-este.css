@@ -140,7 +140,7 @@ footer {
 .slider-img {
   max-width: 50%;
   height: auto;
-  width: 30%; /* Ajusta el porcentaje según lo pequeñas que desees las imágenes */
+  width: auto; /* Ajusta el porcentaje según lo pequeñas que desees las imágenes */
   display: none;
   margin: 0 auto;
   border-radius: 25px;
@@ -202,23 +202,14 @@ footer {
 }
 .texto_ser {
   margin: 20px;
+  text-align: left; /* Ajusta según sea necesario, puede ser left, center, o right */
 }
 
-/* Consulta de medios para pantallas más grandes */
-@media screen and (min-width: 768px) {
+@media (max-width: 900px) {
   .slider-img {
-    width: 70%; /* Tamaño mediano en pantallas más grandes */
+    max-width: 90%;
   }
-}
-
-/* Consulta de medios para pantallas más pequeñas */
-@media screen and (max-width: 767px) {
-  .slider-img {
-    width: 90%; /* Tamaño adaptado al tamaño de la pantalla en pantallas más pequeñas */
-  }
-
-  #prevBtn,
-  #nextBtn {
-    font-size: 1.5em; /* Reducir el tamaño de los botones en pantallas más pequeñas */
+  .Menu-navegacion {
+    width: 100vw;
   }
 }

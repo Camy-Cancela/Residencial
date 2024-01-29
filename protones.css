@@ -134,7 +134,6 @@ footer {
   text-align: center;
 }
 
-/* Contenedor del Slider */
 #slider-container {
   overflow: hidden;
   max-width: 100%;
@@ -145,7 +144,7 @@ footer {
 .slider-img {
   max-width: 50%;
   height: auto;
-  width: 30%; /* Ajusta el porcentaje según lo pequeñas que desees las imágenes */
+  width: auto; /* Ajusta el porcentaje según lo pequeñas que desees las imágenes */
   display: none;
   margin: 0 auto;
   border-radius: 25px;
@@ -208,4 +207,14 @@ footer {
 
 .texto_ser {
   margin: 20px;
+  text-align: left; /* Ajusta según sea necesario, puede ser left, center, o right */
+}
+
+@media (max-width: 900px) {
+  .slider-img {
+    max-width: 90%;
+  }
+  .Menu-navegacion {
+    width: 100vw;
+  }
 }
