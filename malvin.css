@@ -217,15 +217,6 @@ footer {
   }
 }
 
-@media (max-width: 900px) {
-  .slider-img {
-    max-width: 90%;
-  }
-  .Menu-navegacion {
-    width: 100vw;
-  }
-}
-
 @media screen and (max-width: 800px) {
   .acerca {
     text-align: center; /* Ajusta el centrado para pantallas más pequeñas */

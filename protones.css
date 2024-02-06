@@ -112,15 +112,6 @@ footer {
   margin: 20px;
 }
 
-/* Servicios */
-.gal,
-.ser,
-.acerca {
-  text-align: center;
-  margin-top: 40px;
-  margin: 10px;
-}
-
 /* Secciones */
 section {
   margin-top: 40px;
@@ -201,13 +192,12 @@ footer {
   max-width: 100%;
   height: 200px;
   border-radius: 20px;
-  background: black;
   box-shadow: 0 0 20px rgb(0, 0, 0);
 }
 
 .texto_ser {
   margin: 20px;
-  text-align: left; /* Ajusta según sea necesario, puede ser left, center, o right */
+  text-align: justify;
 }
 
 @media (max-width: 900px) {
