@@ -24,7 +24,7 @@ header {
       rgba(251, 194, 235, 0.39) 0%,
       rgba(166, 192, 238, 0.4) 100%
     ),
-    url(../Fotos/3.jpg);
+    url(../Fotos/MoradaP.jpeg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -198,6 +198,14 @@ footer {
 .texto_ser {
   margin: 20px;
   text-align: justify;
+}
+
+.gal,
+.ser,
+.acerca {
+  text-align: center; /* Agrega esta línea para centrar el contenido */
+  margin-top: 40px;
+  margin: 10px;
 }
 
 @media (max-width: 900px) {

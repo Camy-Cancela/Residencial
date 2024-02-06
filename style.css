@@ -22,9 +22,18 @@ body {
 }
 
 /* Header */
-.header {
-  position: relative;
+header {
   height: 100vh;
+  background-image: linear-gradient(
+      to top,
+      rgba(251, 194, 235, 0.39) 0%,
+      rgba(166, 192, 238, 0.4) 100%
+    ),
+    url(../Fotos/11.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
 .background-img {
